@@ -39,9 +39,11 @@ def total_even_pairs(src)
   let sum = 0
   count = 0
   while src[count] do
-    if (src[count][0] % 2 == 0)
     count += 1
-  
+    if ((src[count][0] % 2 == 0) && (src[count][1] % 2 == 0))
+      sum = sum + src[count][0] + src[count][1]
+    end
+  end
   return sum
   
 end
