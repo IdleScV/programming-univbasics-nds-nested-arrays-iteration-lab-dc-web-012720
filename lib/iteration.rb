@@ -22,7 +22,10 @@ def find_greater_pair(src)
   str = []
   count = 0
   while src[count] do
-    str.push(src[count])
+    str.push(src[count].sort().first)
+    count += 1
+  end
+  return str
 end
 
 def total_even_pairs(src)
