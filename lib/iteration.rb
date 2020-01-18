@@ -9,7 +9,7 @@ def join_ingredients(src)
   str = []
   count = 0
   while src[count] do
-    str.push("I love " + {src[count][0]} + " and " + src[count][1] + "on my pizza.")
+    str.push("I love " + {src[count][0]} + " and " + src[count][1] + " on my pizza.")
     count += 1
   end
   return str
